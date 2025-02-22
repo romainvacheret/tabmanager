@@ -10,6 +10,12 @@
             width: 450px;
             padding: 10px;
         }
+        .page {
+            display: none; 
+        }
+        .active {
+            display: block; 
+        }
         button {
             width: 100%;
             padding: 8px;
@@ -37,16 +43,35 @@
     </style>
 </head>
 <body>
-    <button id="listTabs">List Open Tabs</button>
-    <table id="tabsTable">
-        <thead>
-            <tr>
-                <th>Tab Name</th>
-            </tr>
-        </thead>
-        <tbody>
-        </tbody>
-    </table>
+    <!-- Home Page -->
+    <div id="homePage" class="page active">
+        <button id="storeButton">Store</button>
+        <button id="retrieveButton">Retrieve</button>
+    </div>
+
+    <!-- Store Page -->
+    <div id="storePage" class="page">
+        <h2>Stored Page</h2>
+        <button id="listTabs">List tabs</button>
+        <table id="tabsTable">
+            <thead>
+                <tr>
+                    <th>Tab Name</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        <button class="backButton">Back</button>
+    </div>
+
+    <!-- Retrieve Page -->
+    <div id="retrievePage" class="page">
+        <h2>Retrieve Page</h2>
+        <p>This page will be filled later.</p>
+        <button class="backButton">Back</button>
+    </div>
+
     <script src="popup.js"></script>
 </body>
 </html>
