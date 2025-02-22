@@ -45,8 +45,8 @@
 <body>
     <!-- Home Page -->
     <div id="homePage" class="page active">
-        <button id="storeButton">Store</button>
-        <button id="retrieveButton">Retrieve</button>
+        <button id="storePageButton">Store</button>
+        <button id="retrievePageButton">Retrieve</button>
     </div>
 
     <!-- Store Page -->
@@ -62,14 +62,19 @@
             <tbody>
             </tbody>
         </table>
-        <button class="backButton">Back</button>
+        <input type="text" id="collectionStorageInput" placeholder="Enter collection name">
+        <button id="storeTabsButton">Store tabs</button>
+        <button class="homePageButton">Back</button>
     </div>
 
     <!-- Retrieve Page -->
     <div id="retrievePage" class="page">
         <h2>Retrieve Page</h2>
-        <p>This page will be filled later.</p>
-        <button class="backButton">Back</button>
+        <input type="checkbox" id="newWindow"> Open in new window
+        <input type="text" id="collectionRetrievalInput" placeholder="Enter collection name">
+        <button id="retrieveTabsButton">Retrieve tabs</button>
+        <button id="listTabsButton">Retrieve</button>
+        <button class="homePageButton">Back</button>
     </div>
 
     <script src="popup.js"></script>
